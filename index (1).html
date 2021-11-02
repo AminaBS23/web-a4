@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Groom Calculator</title>
+</head>
+<body>
+    <div class="container">
+    <form name="groom">
+        <h1><strong>Groom price calculator</strong></h1>
+        <h4>Name</h4>
+        <div class="input-group mb-3">
+            <input id="name" type="text" aria-label="Amount (to the nearest dollar)">
+        </div>
+
+        <h4>Enter initial bid</h4>
+        <div class="input-group mb-3">
+            <span>$</span>
+            <input id="initialbid" type="number" aria-label="Amount (to the nearest dollar)">
+        </div>
+
+        <h4> Groom's education</h4>
+        <select id="education" aria-label="Default select example">
+            <option selected="">-</option>
+            <option value="1.5">Undergraduate degree </option>
+            <option value="1.2">College degree</option>
+            <option value="1.05">High school degree </option>
+            <option value="0.9">Middle school degree </option>
+        </select>
+        
+        <h4 class="mt-3">Bride's/Groom's family net worth </h4>
+        <select id="worth" aria-label="Default select example">
+            <option selected="">-</option>
+            <option value="2">More than 10,000$ </option>
+            <option value="1.5">Between 5,000$ and 10,000$ </option>
+            <option value="1.2">Less than 5,000$ </option>
+        </select>
+        
+        <h4 class="mt-3">Caste</h4>
+        <select id="caste" aria-label="Default select example">
+            <option selected="">-</option>
+            <option value="100">Brahmin</option>
+            <option value="50">Kshatriya</option>
+            <option value="20">Vaishya</option>
+            <option value="10">Shudra</option>
+            <option value="-50">Varna</option>
+        </select>
+        
+        <h4 class="mt-3">Groom's skills</h4>
+        <div class="form-check">
+            <input id="skills" type="checkbox" value="10">
+            <label for="flexCheckDefault">
+                Playing on a musical instrument
+            </label>
+        </div>
+        <div class="form-check">
+            <input id="skills" type="checkbox" value="20">
+            <label for="flexCheckChecked">
+                Good cook
+            </label>
+        </div>
+        <div class="form-check">
+            <input id="skills" type="checkbox" value="15">
+            <label for="flexCheckChecked">
+                Easygoing character
+            </label>
+        </div>
+        <div class="form-check">
+            <input id="skills" type="checkbox" value="10">
+            <label for="flexCheckChecked">
+                Sings well
+            </label>
+        </div>
+        
+        <h4 class="mt-3">Groom's age</h4>
+        <div class="form-check mt-3">
+            <input id="age" type="radio" name="flexRadioDefault" value="1">
+            <label for="flexRadioDefault1">
+                Between 18-23
+            </label>
+        </div>
+        <div class="form-check">
+            <input id="age" type="radio" name="flexRadioDefault" value="2">
+            <label for="flexRadioDefault1">
+                Between 24-27
+            </label>
+        </div>
+        <div class="form-check">
+            <input id="age" type="radio" name="flexRadioDefault" value="3">
+            <label for="flexRadioDefault1">
+                28+
+            </label>
+        </div>
+        
+        <h4 class="mt-3">Groom's reputation</h4>
+        <div class="form-check">
+            <input id="reputation" type="checkbox" value="1">
+            <label for="flexCheckDefault">
+                Gossips about his/her parent's attitude
+            </label>
+        </div>
+        <div class="form-check">
+            <input id="reputation" type="checkbox" value="2">
+            <label for="flexCheckChecked">
+                Gossips about his/her character
+            </label>
+        </div>
+        <div class="form-check">
+            <input id="reputation" type="checkbox" value="3">
+            <label for="flexCheckChecked">
+                General gossips around his/her person
+            </label>
+        </div>
+
+        <h4 class="mt-3">Love Letter</h4>
+        <div class="input-group mb-3">
+            <textarea id="love-letter" class="form-control" maxlength="500"></textarea>
+        </div>
+
+        <br>
+        <button id="calculate-btn" type="button" style="font-size: 25px;">Calculate</button>
+        <br>
+
+        <hr>
+        <h3><strong id="total"></strong></h3>
+    </form>
+
+    </div>
+    <script type="text/javascript" src="javascript.js"></script>
+
+</body></html>
